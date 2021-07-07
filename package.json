@@ -1,0 +1,68 @@
+{
+  "name": "worldclasscasino-electron",
+  "productName": "Masque World Class Casino",
+  "description": "World Class Casino electron",
+  "version": "0.90.1",
+  "author": {
+    "name": "Masque Publishing",
+    "email": "info@masque.com",
+    "url": "https://www.masque.com"
+  },
+  "copyright": "Copyright © 2013-2021, Masque Publishing, Inc.",
+  "license": "MIT",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "serve": "http-server dist/ -p 8080"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/masquepublishing/worldclasscasino-electron.git"
+  },
+  "bugs": {
+    "url": "https://github.com/masquepublishing/worldclasscasino-electron/issues"
+  },
+  "homepage": "https://github.com/masquepublishing/worldclasscasino-electron#readme",
+  "dependencies": {
+    "electron-log": "^4.3.5",
+    "electron-updater": "^4.3.9"
+  },
+  "devDependencies": {
+    "electron": "^13.1.6",
+    "electron-builder": "^22.11.7",
+    "http-server": "^0.12.3"
+  },
+  "build": {
+    "publish": [
+      {
+        "provider": "generic",
+        "url": "http://localhost:8080/"
+      }
+    ],
+    "appId": "com.masque.worldclasscasino.electron",
+    "mac": {
+      "category": "your.app.category.type",
+      "target": [
+        "zip",
+        "dmg"
+      ]
+    },
+    "linux": {
+      "category": "Utility",
+      "icon": "icons/icons",
+      "target": [
+        "AppImage",
+        "deb"
+      ]
+    },
+    "win": {
+      "target": "nsis",
+      "verifyUpdateCodeSignature": false,
+      "publisherName": "Masque Publishing",
+      "certificateFile": "./certs/some_file.pfx",
+      "certificatePassword": "some_password"
+    }
+  }
+}

@@ -25,6 +25,9 @@ if (!app.requestSingleInstanceLock()) {
   return
 }
 
+app.commandLine.appendSwitch('ignore-gpu-blacklist') // old
+app.commandLine.appendSwitch('ignore-gpu-blocklist') // new
+
 //------------------------------------------------------------------------------
 // Define menu
 //

@@ -5,8 +5,11 @@ This app implements a simple Chromium wrapper for our game World Class Casino us
 As Electron is still evolving quickly, examples on the Internet tend to be outdated or have security issues. This code has been tested on Electron 13 using NPM and should, to the best of our knowledge, be using up-to-date security practices.
 
 Much credit is due to the following examples that helped us build our wrapper:
+
 [`Electron Quick Start`](https://www.electronjs.org/docs/tutorial/quick-start)
+
 [`Matt Haggard's electron-updater-example`](https://github.com/iffy/electron-updater-example)
+
 [`Martin Jakal's electron-auto-update`](https://github.com/mjakal/electron-auto-update)
 
 ## Getting started

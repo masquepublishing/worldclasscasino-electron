@@ -2,7 +2,7 @@
   "name": "worldclasscasino-electron",
   "productName": "Masque World Class Casino",
   "description": "World Class Casino electron",
-  "version": "0.90.1",
+  "version": "0.90.4",
   "author": {
     "name": "Masque Publishing",
     "email": "info@masque.com",
@@ -38,7 +38,7 @@
     "publish": [
       {
         "provider": "generic",
-        "url": "http://localhost:8080/"
+        "url": "https://www.masque.com/download/worldclasscasino-electron/"
       }
     ],
     "appId": "com.masque.worldclasscasino.electron",
